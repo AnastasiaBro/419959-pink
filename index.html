@@ -5,8 +5,242 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="main-nav__logo">
+          <img class="main-nav__logo-image" src="img/pink-logo.svg" width="75" height="22" alt="Пинк логотип">
+        </a>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение Пинк</h1>
+      <div class="content-image">
+      </div>
+      <section class="downloads">
+        <h2 class="visually-hidden">Приложение для скачивания</h2>
+        <button class="downloads__application" type="button">Скачать приложение</button>
+        <div class="downloads__wrapper">
+          <a class="downloads__button apple-button" href="#">
+            <img class="apple-button__image" src="img/apple.svg" width="22" height="22" alt="Яблоко">
+          </a>
+          <a class="downloads__button android-button" href="#">
+            <img class="android-button__image" src="img/android.svg" width="22" height="22" alt="Андроид">
+          </a>
+          <a class="downloads__button windows-button" href="#">
+            <img class="windows-button__image" src="img/windows.svg" width="22" height="22" alt="Виндоуз">
+          </a>
+        </div>
+        <p class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
 
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="advantages__title">
+          <p class="advantages__title--first">Устали от серости мегаполиса?</p>
+          <p class="advantages__title--second">Нам есть, что вам предложить!</p>
+        </div>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <p class="advantages__title">Поднимает настроение</p>
+            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__title">Меняет мир вокруг</p>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__title">Заводит новых друзей</p>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="reviews__wrapper">
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
+                <cite class="reviews__name">Николай Петров</cite>
+                <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+                <cite class="reviews__name">Николай Петров</cite>
+                <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+                <cite class="reviews__name">Николай Петров</cite>
+                <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            </blockquote>
+          </div>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+
+      <section class="rate">
+        <h2 class="visually-hidden">Тарифный план</h2>
+        <div class="rate__wrapper">
+          <div class="rate__list slider__list">
+            <table class="rate__table">
+              <tr>
+                <th colspan="2" class="rate__title">
+                  <b class="rate__name">Стандарт</b>
+                  <p class="rate__price">3,99 USD</p>
+                </th>
+              </tr>
+              <tr>
+                <td class="rate__field">
+                  Розовый фильтр
+                </td>
+                <td class="rate__image">
+                  <img class="rate__image--yes" src="img/yes.svg" width="35" height="25" alt="Галочка">
+                </td>
+              </tr>
+              <tr>
+                <td class="rate__field">
+                  Смайлики
+                </td>
+                <td class="rate__image">
+                  <img class="rate__image--yes" src="img/yes.svg" width="35" height="25" alt="Галочка">
+                </td>
+              </tr>
+              <tr>
+                <td class="rate__field">
+                  Комментарии
+                </td>
+                <td class="rate__image">
+                  <img class="rate__image--no" src="img/no.svg" width="35" height="25" alt="Крестик">
+                </td>
+              </tr>
+            </table>
+
+            <table class="rate__table">
+              <tr>
+                <th colspan="2" class="rate__title">
+                  <b class="rate__name">Стандарт</b>
+                  <p class="rate__price">3,99 USD</p>
+                </th>
+              </tr>
+              <tr>
+                <td class="rate__field">
+                  Розовый фильтр
+                </td>
+                <td class="rate__image">
+                  <img class="rate__image--yes" src="img/yes.svg" width="35" height="25" alt="Галочка">
+                </td>
+              </tr>
+              <tr>
+                <td class="rate__field">
+                  Смайлики
+                </td>
+                <td class="rate__image">
+                  <img class="rate__image--yes" src="img/yes.svg" width="35" height="25" alt="Галочка">
+                </td>
+              </tr>
+              <tr>
+                <td class="rate__field">
+                  Комментарии
+                </td>
+                <td class="rate__image">
+                  <img class="rate__image--no" src="img/no.svg" width="35" height="25" alt="Крестик">
+                </td>
+              </tr>
+            </table>
+
+            <table class="rate__table">
+              <tr>
+                <th colspan="2" class="rate__title">
+                  <b class="rate__name">Стандарт</b>
+                  <p class="rate__price">3,99 USD</p>
+                </th>
+              </tr>
+              <tr>
+                <td class="rate__field">
+                  Розовый фильтр
+                </td>
+                <td class="rate__image">
+                  <img class="rate__image--yes" src="img/yes.svg" width="35" height="25" alt="Галочка">
+                </td>
+              </tr>
+              <tr>
+                <td class="rate__field">
+                  Смайлики
+                </td>
+                <td class="rate__image">
+                  <img class="rate__image--yes" src="img/yes.svg" width="35" height="25" alt="Галочка">
+                </td>
+              </tr>
+              <tr>
+                <td class="rate__field">
+                  Комментарии
+                </td>
+                <td class="rate__image">
+                  <img class="rate__image--no" src="img/no.svg" width="35" height="25" alt="Крестик">
+                </td>
+              </tr>
+            </table>
+          </div>
+          <p class="rate__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__wrapper">
+          <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__title">Звоните:</p>
+              <a class="contacts__phone" href="tel:+78125556666">
+                <span class="contacts__phone--mobile">Тел.:</span> +7 (812) 555-66-66
+              </a>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__title">Пишите:</p>
+              <p class="contacts__mail">mail@htmlacademy.ru</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__title">Приезжайте в гости:</p>
+              <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <p class="map__wrapper">
+          <iframe></iframe>
+        </p>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+    </footer>
   </body>
 </html>
