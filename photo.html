@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/pink-logo.svg" width="75" height="22" alt="Пинк логотип">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение Пинк</h1>
+      <section class="photo">
+        <h2 class="photo__title">Фотографии пользователей</h2>
+        <p class="photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <div class="photo__wrapper">
+          <ul class="photo__list">
+
+            <li class="photo__item">
+              <a class="photo__link" href="#">
+                <img class="photo__image photo__image--wide" src="img/panorama-mobile.jpg" width="320" height="138" alt="Панорама">
+              </a>
+              <div class="photo__top">
+                <p class="photo__top-title">
+                  <span class="photo__top-name">Анна</span>(5 минут назад)
+                </p>
+                <p class="photo__top-description">
+                  Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+                </p>
+              </div>
+              <div class="photo__bottom">
+                <button class="button photo__bottom-like" type="button"><svg width="21" height="22"></svg><span class="visually-hidden">Поставить лайк</span></button>
+                <p class="photo__bottom-text">Нравится: 215</p>
+              </div>
+            </li>
+
+            <li class="photo__item">
+              <a class="photo__link" href="#">
+                <img class="photo__image" src="img/photo-1-mobile.jpg" width="280" height="179" alt="Фото-один">
+              </a>
+              <div class="photo__top">
+                <p class="photo__top-title">
+                  <span class="photo__top-name">Левон</span>(5 часов назад)
+                </p>
+                <p class="photo__top-description">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+              </div>
+              <div class="photo__bottom">
+                <button class="button photo__bottom-like" type="button"><svg width="21" height="22"></svg><span class="visually-hidden">Поставить лайк</span></button>
+                <p class="photo__bottom-text">Нравится: 356</p>
+              </div>
+            </li>
+
+            <li class="photo__item">
+              <a class="photo__link" href="#">
+                <img class="photo__image" src="img/photo-2-mobile.jpg" width="280" height="179" alt="Фото-два">
+              </a>
+              <div class="photo__top">
+                <p class="photo__top-title">
+                  <span class="photo__top-name">Антон</span>(12 часов назад)
+                </p>
+                <p class="photo__top-description">
+                  Соседи будут рады!
+                </p>
+              </div>
+              <div class="photo__bottom">
+                <button class="button photo__bottom-like" type="button"><svg width="21" height="22"></svg><span class="visually-hidden">Поставить лайк</span></button>
+                <p class="photo__bottom-text">Нравится: 666</p>
+              </div>
+            </li>
+
+            <li class="photo__item">
+              <a class="photo__link" href="#">
+                <img class="photo__image" src="img/photo-3-mobile.jpg" width="280" height="179" alt="Фото-три">
+              </a>
+              <div class="photo__top">
+                <p class="photo__top-title">
+                  <span class="photo__top-name">Борис</span>(20 часов назад)
+                </p>
+                <p class="photo__top-description">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+              </div>
+              <div class="photo__bottom">
+                <button class="button photo__bottom-like" type="button"><svg width="21" height="22"></svg><span class="visually-hidden">Поставить лайк</span></button>
+                <p class="photo__bottom-text">Нравится: 215</p>
+              </div>
+            </li>
+
+            <li class="photo__item">
+              <a class="photo__link" href="#">
+                <img class="photo__image" src="img/photo-4-mobile.jpg" width="280" height="179" alt="Фото-четыре">
+              </a>
+              <div class="photo__top">
+                <p class="photo__top-title">
+                  <span class="photo__top-name">Сергей</span>(25 часов назад)
+                </p>
+                <p class="photo__top-description">
+                  Самая кубанская в мире!
+                </p>
+              </div>
+              <div class="photo__bottom">
+                <button class="button photo__bottom-like" type="button"><svg width="21" height="22"></svg><span class="visually-hidden">Поставить лайк</span></button>
+                <p class="photo__bottom-text">Нравится: 4</p>
+              </div>
+            </li>
+
+            <li class="photo__item">
+              <a class="photo__link" href="#">
+                <img class="photo__image" src="img/photo-5-mobile.jpg" width="280" height="179" alt="Фото-пять">
+              </a>
+              <div class="photo__top">
+                <p class="photo__top-title">
+                  <span class="photo__top-name">Максим</span>(40 часов назад)
+                </p>
+                <p class="photo__top-description">
+                  Где снег-то?
+                </p>
+              </div>
+              <div class="photo__bottom">
+                <button class="button photo__bottom-like" type="button"><svg width="21" height="22"></svg><span class="visually-hidden">Поставить лайк</span></button>
+                <p class="photo__bottom-text">Нравится: 150</p>
+              </div>
+            </li>
+
+            <li class="photo__item">
+              <a class="photo__link" href="#">
+                <img class="photo__image" src="img/photo-6-mobile.jpg" width="280" height="179" alt="Фото-шесть">
+              </a>
+              <div class="photo__top">
+                <p class="photo__top-title">
+                  <span class="photo__top-name">Надежда</span>(45 часов назад)
+                </p>
+                <p class="photo__top-description">
+                  Всем GM и взаимные лайки!
+                </p>
+              </div>
+              <div class="photo__bottom">
+                <button class="button photo__bottom-like" type="button"><svg width="21" height="22"></svg><span class="visually-hidden">Поставить лайк</span></button>
+                <p class="photo__bottom-text">Нравится: 2560</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="post">
+        <h2 class="visually-hidden">Запостить фото</h2>
+        <p class="photo__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="post__filter">
+          <img class="post__photo" src="img/photo-7-mobile.jpg" width="280" height="375" alt="Фото-семь">
+
+          <div class="post__effects">
+            <button class="post__effects-crop" type="button"><svg width="21" height="22"></svg><span class="visually-hidden">Обрезать</span></button>
+            <button class="post__effects-fill" type="button"><svg width="21" height="22"></svg><span class="visually-hidden">Залить</span></button>
+            <button class="post__effects-contrast" type="button"><svg width="21" height="22"></svg><span class="visually-hidden">Контрастность</span></button>
+          </div>
+
+          <div class="post__range">
+            <div class="post__scale">
+              <div class="post__bar"></div>
+            </div>
+            <div class="post__range-toggle"></div>
+          </div>
+
+          <div class="post__button">
+            <button class="button post__button-add" type="submit">Запостить</button>
+            <button class="button post__button-cancel" type="submit">Отмена</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__logo">
+        <img class="page-footer__logo-image" src="img/logotype-blue-tablet.svg" width="160" height="50" alt="Пинк логотип полный">
+      </div>
+
+      <div class="page-footer__social social">
+        <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Твиттер</span>
+            <svg></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span>
+            <svg></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Ютуб</span>
+            <svg></svg>
+          </a>
+        </li>
+      </ul>
+      </div>
+
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="button copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"><svg width="115" height="41"></svg></a>
+      </div>
+    </footer>
+
+  </body>
+</html>
