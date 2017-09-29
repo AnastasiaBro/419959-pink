@@ -1,54 +1,43 @@
-/*общее*/
 @import "_page-header.less";
 @import "_main-nav.less";
 @import "_site-list.less";
 @import "_page-main.less";
 @import "_visually-hidden.less";
-
-/*index*/
 @import "_content-image.less";
 @import "_downloads.less";
-/*@import "_apple-button.less";
-@import "_android-button.less";
-@import "_windows-button.less";*/
 @import "_advantages.less";
 @import "_reviews.less";
-
-/*общее*/
-/*@import "_slider.less";*/
-
-/*index*/
 @import "_rate.less";
 @import "_contacts.less";
 @import "_map.less";
-
-/*общее*/
 @import "_page-footer.less";
-
-/*form*/
 @import "_competition.less";
 @import "_forms.less";
-
-/*общее*/
-/*@import "_button.less";*/
 @import "_social.less";
 @import "_copyright.less";
-
-/*form*/
 @import "_modal.less";
-/*@import "_modal-error.less";
-@import "_modal-luck.less";*/
-
-/*photo*/
 @import "_photo.less";
 @import "_post.less";
 
 @font-face {
   font-family: "OpenSans";
-  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff"), url("../fonts/opensanslight.woff2") format("woff2");
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+  font-weight: 400;
 }
 
-body {
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensanslight.woff") format("woff"), url("../fonts/opensanslight.woff2") format("woff2");
+    font-weight: 100;
+}
+
+.body-style {
   width: 320px;
   margin: 0;
   padding: 0;
@@ -56,13 +45,8 @@ body {
 }
 
 html,
-body {
+.body-style {
   width: 320px;
   margin-right: auto;
   margin-left: auto;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }

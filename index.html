@@ -5,7 +5,7 @@
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="body-style">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
@@ -21,16 +21,16 @@
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="#">Главная</a>
+            <a class="site-list__link" href="#">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+            <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+            <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -40,7 +40,7 @@
       <h1 class="visually-hidden">Приложение Пинк</h1>
       <div class="content-image">
         <h2 class="visually-hidden">Характеристики приложения</h2>
-        <img src="img/iphone-hand-mobile@1x.png" width="256" height="286" alt="Телефон в руке">
+        <img class="content-image__mobile" src="img/iphone-hand-mobile@1x.png" width="256" height="286" alt="Телефон в руке">
       </div>
       <section class="downloads">
         <h2 class="visually-hidden">Приложение для скачивания</h2>
@@ -63,7 +63,7 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="advantages__title advantages__title--first-block">
           <p class="advantages__title-first">Устали от серости мегаполиса?</p>
-          <p class="advantages__title-second">Нам есть, что вам предложить!</p>
+          <p class="advantages__title-first">Нам есть, что вам предложить!</p>
         </div>
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -247,7 +247,7 @@
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
         <p class="map__wrapper">
-          <iframe></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.735795529188!2d30.320583479851255!3d59.93652613263411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1506699811013" width="320" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
         </p>
       </section>
     </main>

@@ -6,12 +6,13 @@
   background-color: #000000;
 
   height: 170px;
+  outline: 5px solid yellow;
 }
 
 .photo__title {
   font-size: 24px;
-
-  font-weight: 400;
+  line-height: normal;
+  font-weight: 100;
   color: #ffffff;
 }
 
@@ -20,6 +21,8 @@
   line-height: 30px;
   font-weight: 400;
   color: #283645;
+
+  outline: 5px solid green;
 }
 
 .photo__text--first {
@@ -39,7 +42,7 @@
 .photo__top-title {
   font-size: 12px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 100;
   color: #283645;
   text-transform: uppercase;
 }
@@ -73,9 +76,20 @@
   border: none;
 }
 
+.photo__wrapper {
+  outline: 5px solid blue;
+}
+
 .photo__item-wrapper {
   background-color: #f2f2f2;
   padding-left: 18px;
   padding-bottom: 20px;
   padding-top: 20px;
+  outline: 7px solid lime;
+}
+
+.photo__image,
+.photo__image--wide {
+  max-width: 100%;
+  height: auto;
 }
