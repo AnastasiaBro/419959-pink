@@ -10,12 +10,21 @@
 
 /*высота навигации у планшетной версии такая же, как у мобильной*/
 
+@media (min-width: 660px) {
+  .main-nav {
+    /* Временно для сетки */
+    width: auto;
+  }
+}
+
 @media (min-width: 1200px) {
   .main-nav {
     /* Временно для сетки */
     width: auto;
     margin: 0;
     height: 110px;
+    width: 940px;
+    padding: 0 130px;
   }
 }
 
@@ -28,6 +37,12 @@
   /* Временно для сетки */
   min-height: 256px;
   outline: 10px solid lime;
+}
+
+@media (min-width: 660px) {
+  .main-nav__list {
+  width: 660px;
+  }
 }
 
 @media (min-width: 1200px) {
