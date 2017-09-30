@@ -1,4 +1,38 @@
 .main-nav {
   background-color: #283645;
   width: 320px;
+  margin: 0 auto;
+
+  /* Временно для сетки */
+  min-height: 256px;
+  outline: 5px solid red;
+}
+
+/*высота навигации у планшетной версии такая же, как у мобильной*/
+
+@media (min-width: 1200px) {
+  .main-nav {
+    /* Временно для сетки */
+    width: auto;
+    margin: 0;
+    height: 110px;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 256px;
+  outline: 10px solid lime;
+}
+
+@media (min-width: 1200px) {
+  .main-nav__list {
+    width: 620px;
+    height: 110px;
+  }
 }

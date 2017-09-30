@@ -1,10 +1,14 @@
 .page-header {
   background-color: #283645;
   margin: 0;
-  padding: 0;
 
-  height: 326px;
-  outline: 5px solid red;
+  display: flex;
+  flex-direction: column;
+
+  /*width: 280px;
+  padding: 0 20px;*/
+
+  /*height: 326px;*/
 }
 
 .page-header__wrapper {
@@ -15,6 +19,14 @@
 
 .page-header__logo {
   height: 70px;
+  width: 75px;
+}
+
+@media (min-width: 660px) {
+  .page-header__logo {
+    height: 110px;
+    width: 150px;
+  }
 }
 
 .page-header__toggle {
