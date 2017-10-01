@@ -1,0 +1,42 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 256px;
+  /*outline: 5px solid green;*/
+  background-color: green;
+  opacity: 0.3;
+}
+
+@media (min-width: 660px) {
+  .site__list {
+    width: 660px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-list {
+    width: 620px;
+    height: 110px;
+  }
+}
+
+.site-list__item,
+.site-list__item--active {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  min-height: 62px;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+}
+
+.site-list__link {
+  text-decoration: none;  /*без подчеркивания*/
+  color: #ffffff;
+}
