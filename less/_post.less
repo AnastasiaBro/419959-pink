@@ -1,5 +1,30 @@
 .post {
-  outline: 5px solid yellow;
+  /*outline: 5px solid yellow;*/
+}
+
+.post__filter {
+  padding-left: 20px;
+  padding-right: 20px;
+  /*временно для сетки*/
+  min-height: 757px;
+  background-color: red;
+  opacity: 0.3;
+}
+
+@media (min-width: 660px) {
+  .post__filter {
+    /*временно для сетки*/
+    min-height: 511px;
+  }
+}
+
+@media (min-width: 960px) {
+  .post__filter {
+    padding-left: 10px;
+    padding-right: 10px;
+    /*временно для сетки*/
+    min-height: 514px;
+  }
 }
 
 .post__button-add {

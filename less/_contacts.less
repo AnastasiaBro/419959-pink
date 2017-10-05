@@ -1,8 +1,65 @@
 .contacts {
-  background-color: #ffffff;
-
-  height: 413px;
+  /*background-color: #ffffff;*/
+  margin: 0 auto;
+  width: 320px;
+  /*временно для сетки*/
+  height: 412px;
   outline: 5px solid red;
+}
+
+@media (min-width: 660px) {
+  .contacts {
+    width: 660px;
+    /* Временно для сетки */
+    height: 406px;
+  }
+}
+
+@media (min-width: 960px) {
+  .contacts {
+    width: 960px;
+    /* Временно для сетки */
+    height: 367px;
+  }
+}
+
+.contacts__wrapper {
+  width: 242px;
+  padding-left: 40px;
+  padding-right: 38px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*временно для сетки*/
+  height: 332px;
+  background-color: green;
+  opacity: 0.3;
+}
+
+@media (min-width: 660px) {
+  .contacts__wrapper {
+    width: 620px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    /* Временно для сетки */
+    height: 336px;
+  }
+}
+
+@media (min-width: 960px) {
+  .contacts__wrapper {
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    /* Временно для сетки */
+    height: 277px;
+  }
 }
 
 .contacts__questions {

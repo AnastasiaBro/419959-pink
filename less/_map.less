@@ -1,12 +1,50 @@
 .map {
-  height: 200px;
+  margin: 0 auto;
+  width: 320px;
+  /*временно для сетки*/
+  min-height: 200px;
+  /*outline: 5px solid yellow;*/
+}
 
-  outline: 5px solid yellow;
+@media (min-width: 660px) {
+  .map {
+    width: 660px;
+    /* Временно для сетки */
+    min-height: 373px;
+  }
+}
+
+@media (min-width: 960px) {
+  .map {
+    width: 960px;
+    /* Временно для сетки */
+    min-height: 501px;
+  }
 }
 
 .map__wrapper {
-  background-image: url("../img/bg-triangle-white-footer.svg");
+  /*background-image: url("../img/bg-triangle-white-footer.svg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center top;*/
   margin: 0;
+  /*временно для сетки*/
+  min-height: 200px;
+  background-color: blue;
+  opacity: 0.3;
+}
+
+@media (min-width: 660px) {
+  .map__wrapper {
+    width: 660px;
+    /* Временно для сетки */
+    min-height: 373px;
+  }
+}
+
+@media (min-width: 960px) {
+  .map__wrapper {
+    width: 960px;
+    /* Временно для сетки */
+    min-height: 501px;
+  }
 }
