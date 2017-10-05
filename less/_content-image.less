@@ -1,14 +1,18 @@
 .content-image {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  /*background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  /*background-position: 0px 451px, 0 -56px;*/
+
   background-position: center -66px;
-  background-color: #000000;
-
+  background-color: #000000;*/
   position: relative;
-
-  height: 396px;
+  height: 395px;
   outline: 5px solid yellow;
+}
+
+@media (min-width: 660px) {
+  .content-image {
+    display: none;
+  }
 }
 
 .content-image__mobile {
