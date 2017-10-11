@@ -1,21 +1,20 @@
 .downloads {
-  /*background-color: #283645;*/
+  background-color: #1d2631;
   margin: 0;
   width: 280px;
   padding: 0 20px;
-  /*временно для сетки*/
-  height: 271px;
-  /*background-color: green;
-  opacity: 0.6;*/
-  outline: 5px solid green;
 }
 
 @media (min-width: 660px) {
   .downloads {
+    background-image: url("../img/iphone-hand-mobile@1x.png"),  url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 185px 175px, center bottom;
+    background-color: #212b37;
+    background-size: 70%, cover;
+
     width: 620px;
     padding: 0 20px;
-    /* Временно для сетки */
-    height: 618px;
     margin-top: -110px;
     padding-top: 110px;
   }
@@ -23,54 +22,89 @@
 
 @media (min-width: 960px) {
   .downloads {
+    background-position: 380px 190px, center -560px;
+    background-color: #212b37;
+    background-size: 55%, 250%;
+
     margin-top: 0;
     width: 940px;
     padding: 0 10px;
-    /* Временно для сетки */
-    height: 853px;
   }
 }
 
 .downloads__container {
-  /*display: inline-block;
-  vertical-align: middle;*/
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background-color: blue;
-  opacity: 0.3;
-  /* Временно для сетки */
-  height: 271px;
+  justify-content: flex-start;
 }
 
 @media (min-width: 660px) {
   .downloads__container {
     width: 300px;
     padding-top: 90px;
-    padding-bottom: 90px;
-    /* Временно для сетки */
-    height: 438px;
+    padding-bottom: 94px;
+    justify-content: flex-start;
   }
 }
 
 @media (min-width: 960px) {
   .downloads__container {
     width: 300px;
-    padding-top: 215px;
+    padding-top: 218px;
     padding-bottom: 105px;
-    /* Временно для сетки */
-    height: 533px;
+    justify-content: flex-start;
+  }
+}
+
+.downloads__tablet-desktop {
+  display: none;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 100;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media (min-width: 660px) {
+  .downloads__tablet-desktop {
+    text-align: center;
+    display: inline;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: 960px) {
+  .downloads__tablet-desktop {
+    font-size: 50px;
+    line-height: 60px;
+    padding-left: 33px;
+    padding-right: 33px;
+    margin-bottom: 52px;
   }
 }
 
 .downloads__block-mobile {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  /* Временно для сетки */
-  height: 215px;
+  justify-content: flex-start;
+
   padding-top: 28px;
-  padding-bottom: 28px;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 660px) {
+  .downloads__block-mobile {
+    justify-content: flex-start;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .downloads__block-mobile {
+    padding-bottom: 0;
+  }
 }
 
 .downloads__application {
@@ -80,47 +114,90 @@
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #283645;
-  border: 2px solid #ffffff;
+  background-color: #1d2631;
+  border: 3px solid #ffffff;
   border-radius: 50px;
+
+  margin-bottom: 32px;
+  outline: none;
 }
 
-.downloads__text {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 100;
-  color: #ffffff;
-  background-color: lime;
-  opacity: 0.7;
+@media (min-width: 660px) {
+  .downloads__application {
+    width: 300px;
+    height: 55px;
+    background-color: transparent;
+    margin-bottom: 44px;
+  }
+}
+
+@media (min-width: 960px) {
+  .downloads__application {
+    width: 300px;
+    height: 55px;
+    font-size: 21px;
+    line-height: 18px;
+    margin-bottom: 65px;
+  }
+}
+
+.downloads__application:hover {
+  background-color: #ffffff;
+  color: #d22856;
+}
+
+.downloads__application:active {
+  background-color: #ffffff;
+  color: rgba(210, 40, 86, 0.3);
 }
 
 .downloads__wrapper {
-  outline: 5px solid pink;
+  padding-left: 18px;
+  padding-right: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+
+  margin-bottom: 5px;
 }
 
-.downloads__tablet-desktop {
-  display: none;
-  font-size: 40px;
-  line-height: normal;
+@media (min-width: 660px) {
+  .downloads__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    margin-bottom: 33px;
+  }
+}
+
+@media (min-width: 960px) {
+  .downloads__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    margin-bottom: 52px;
+  }
+}
+
+.downloads__text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
   font-weight: 100;
   color: #ffffff;
 }
 
 @media (min-width: 660px) {
-  .downloads__tablet-desktop {
-    display: inline;
-    background-color: red;
-    padding-left: 55px;
-    padding-right: 55px;
-    /* Временно для сетки */
+  .downloads__text {
+    font-size: 18px;
+    margin: 0;
   }
 }
 
 @media (min-width: 960px) {
-  .downloads__tablet-desktop {
-    font-size: 50px;
-    padding-left: 35px;
-    padding-right: 35px;
-    /* Временно для сетки */
+  .downloads__text {
+    font-size: 18px;
+    margin-bottom: 18px;
   }
 }
