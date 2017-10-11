@@ -9,8 +9,8 @@
 }
 
 .slider__list {
-    width: 300%;
-    transition: transform 0.8s ease;
+  width: 300%;
+  transition: transform 0.8s ease;
 }
 
 @media (min-width: 960px) {
@@ -85,33 +85,33 @@
 #btn-1:checked ~ .slider__controls label[for="btn-1"],
 #btn-2:checked ~ .slider__controls label[for="btn-2"],
 #btn-3:checked ~ .slider__controls label[for="btn-3"] {
-    background-color: #ffffff;
-    border: 3px solid #2d3b49;
-    border-radius: 50%;
+  background-color: #ffffff;
+  border: 3px solid #2d3b49;
+  border-radius: 50%;
 }
 
 #btn-1:checked ~ .slider__wrapper .slider__list {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 #btn-2:checked ~ .slider__wrapper .slider__list {
-    transform: translateX(-320px);
+  transform: translateX(-320px);
 }
 
 #btn-3:checked ~ .slider__wrapper .slider__list {
-    transform: translateX(-640px);
+  transform: translateX(-640px);
 }
 
 @media (min-width: 660px) {
   #btn-1:checked ~ .slider__wrapper .slider__list {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 
   #btn-2:checked ~ .slider__wrapper .slider__list {
-      transform: translateX(-660px);
+    transform: translateX(-660px);
   }
 
   #btn-3:checked ~ .slider__wrapper .slider__list {
-      transform: translateX(-1320px);
+    transform: translateX(-1320px);
   }
 }
