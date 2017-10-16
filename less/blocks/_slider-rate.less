@@ -10,12 +10,14 @@
 
 .slider-rate__list {
   width: 300%;
-  transition: transform 0.8s ease;
+  /*transition: transform 0.8s ease;*/
+  transform: translateX(-258px);
 }
 
 @media (min-width: 660px) {
   .slider-rate__list {
     width: 100%;
+    transform: translateX(0);
   }
 }
 
@@ -98,13 +100,3 @@
 #btn-c:checked ~ .slider-rate__wrapper .slider-rate__list {
   transform: translateX(-515px);
 }*/
-
-.slider-rate__list {
-  transform: translateX(-258px);
-}
-
-@media (min-width: 660px) {
-  .slider-rate__list {
-    transform: translateX(0);
-  }
-}
