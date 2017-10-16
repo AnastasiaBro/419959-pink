@@ -20,7 +20,7 @@
 
 @media (min-width: 960px) {
   .reviews {
-    width: 960px;
+    width: 100%;
     position: relative;
     /* Временно для сетки */
     /*height: 415px;*/
@@ -61,25 +61,14 @@
     position: absolute;
     bottom: -67px;
     left: 0;
+    /*margin-left: -50%;
+    overflow: hidden;*/
     display: inline-block;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 67px 960px 0 0;
     border-color: #ffffff transparent transparent transparent;
-  }
-}
-
-@media (min-width: 960px) {
-  .reviews::after {
-    content: "Цитата";
-    position: absolute;
-    top: 72px;
-    left: 443px;
-    display: inline-block;
-    width: 79px;
-    height: 63px;
-    background-color: pink;
   }
 }
 
@@ -185,6 +174,7 @@
     padding-right: 10px;
     padding-top: 173px;
     padding-bottom: 23px;
+    margin: 0 auto;
     /* Временно для сетки */
     /*height: 190px;*/
   }
@@ -209,6 +199,20 @@
   .reviews__list {
     padding-top: 10px;
     padding-bottom: 15px;
+    position: relative;
+  }
+}
+
+@media (min-width: 960px) {
+  .reviews__list::after {
+    content: "Цитата";
+    position: absolute;
+    top: -100px;
+    left: 433px;
+    display: inline-block;
+    width: 79px;
+    height: 63px;
+    background-color: pink;
   }
 }
 
@@ -285,8 +289,8 @@
 @media (min-width: 960px) {
   .reviews__left {
     position: absolute;
-    left: 10px;
-    top: 213px;
+    left: 0;
+    top: 30px;
     outline: none;
   }
 }
@@ -294,8 +298,8 @@
 @media (min-width: 960px) {
   .reviews__right {
     position: absolute;
-    right: 10px;
-    top: 213px;
+    right: 0;
+    top: 30px;
     outline: none;
   }
 }

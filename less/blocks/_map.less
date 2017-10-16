@@ -12,7 +12,7 @@
 
 @media (min-width: 960px) {
   .map {
-    width: 960px;
+    width: 100%;
   }
 }
 
@@ -39,7 +39,7 @@
   border-color: #ffffff transparent transparent transparent;
 }
 
-.map__wrapper::after {
+/*.map__wrapper::after {
   position: absolute;
   top: 90px;
   left: 155px;
@@ -48,7 +48,7 @@
   width: 36px;
   height: 36px;
   background-image: url("../img/icon-map-marker.svg");
-}
+}*/
 
 @media (min-width: 660px) {
   .map__wrapper {
@@ -72,8 +72,7 @@
     border-width: 68px 330px 0 330px;
     border-color: #ffffff transparent transparent transparent;
   }
-
-  .map__wrapper::after {
+  /*.map__wrapper::after {
     position: absolute;
     top: 170px;
     left: 325px;
@@ -82,12 +81,12 @@
     width: 36px;
     height: 36px;
     background-image: url("../img/icon-map-marker.svg");
-  }
+  }*/
 }
 
 @media (min-width: 960px) {
   .map__wrapper {
-    width: 960px;
+    width: 100%;
     /* Временно для сетки */
     height: 480px;
   }
@@ -103,7 +102,7 @@
     border-width: 83px 480px 0 480px;
     border-color: #ffffff transparent transparent transparent;
   }
-
+/*
   .map__wrapper::after {
     position: absolute;
     top: 200px;
@@ -113,19 +112,29 @@
     width: 36px;
     height: 36px;
     background-image: url("../img/icon-map-marker.svg");
-  }
+  }*/
 }
 
+/*.triangle-bottom:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 104px 600px 0 600px;
+    border-color: #ffffff transparent transparent transparent;
+}*/
+
 @media (min-width: 660px) {
-  .map__size {
+  .map__block {
     width: 660px;
     height: 373px;
   }
 }
 
 @media (min-width: 960px) {
-  .map__size {
-    width: 960px;
+  .map__block {
+    width: 100%;
     height: 480px;
   }
 }

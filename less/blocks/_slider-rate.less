@@ -40,15 +40,18 @@
 }
 
 .slider-rate__radio {
-  display: inline-block;
-  vertical-align: middle;
+  border: none;
+  /*border: 3px solid #ffffff;*/
   width: 6px;
   height: 6px;
-  border: 3px solid #f2f2f2;
+  padding: 0;
   border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 7px;
+  outline: none;
+  position: relative;
   background-color: #bec2c7;
-  margin: 0 5px;
-  cursor: pointer;
 }
 
 .slider-rate__radio:hover {
@@ -76,7 +79,7 @@
   display: none;
 }
 
-#btn-a:checked ~ .slider-rate__controls label[for="btn-a"],
+/*#btn-a:checked ~ .slider-rate__controls label[for="btn-a"],
 #btn-b:checked ~ .slider-rate__controls label[for="btn-b"],
 #btn-c:checked ~ .slider-rate__controls label[for="btn-c"] {
   background-color: #ffffff;
@@ -94,10 +97,14 @@
 
 #btn-c:checked ~ .slider-rate__wrapper .slider-rate__list {
   transform: translateX(-515px);
+}*/
+
+.slider-rate__list {
+  transform: translateX(-258px);
 }
 
 @media (min-width: 660px) {
-  #btn-b:checked ~ .slider-rate__wrapper .slider-rate__list {
+  .slider-rate__list {
     transform: translateX(0);
   }
 }

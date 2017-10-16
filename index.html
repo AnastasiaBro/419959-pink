@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Пинк</title>
-    <link href="css/normalize.css" rel="stylesheet" >
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="body-style index-page">
+  <body class="body-style">
     <header class="page-header">
       <div class="page-header__container">
         <div class="page-header__wrapper page-header__wrapper--none">   <!--page-header__wrapper--none, page-header__wrapper--transparent-->
@@ -127,18 +126,25 @@
 
       <section class="reviews slider">
         <h2 class="visually-hidden">Отзывы</h2>
-
+        <!--
         <input class="slider__toggle" type="radio" id="btn-1" name="toggle" checked>
         <input class="slider__toggle" type="radio" id="btn-2" name="toggle">
         <input class="slider__toggle" type="radio" id="btn-3" name="toggle">
-
         <div class="slider__controls">
           <label class="slider__radio" for="btn-1"></label>
           <label class="slider__radio" for="btn-2"></label>
           <label class="slider__radio" for="btn-3"></label>
         </div>
+        -->
+        <div class="slider__controls">
+          <button type="button" class="slider__radio" checked><span class="visually-hidden">1</span></button>
+          <button type="button" class="slider__radio"><span class="visually-hidden">2</span></button>
+          <button type="button" class="slider__radio"><span class="visually-hidden">3</span></button>
+        </div>
         <div class="reviews__wrapper slider__wrapper">
           <div class="reviews__list slider__list">
+            <button class="reviews__left" type="button"><span class="visually-hidden">Влево</span></button>
+            <button class="reviews__right" type="button"><span class="visually-hidden">Вправо</span></button>
             <blockquote class="reviews__item slider__item">
                 <cite class="reviews__name">Николай Петров</cite>
                 <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -156,14 +162,12 @@
             </blockquote>
           </div>
         </div>
-        <button class="reviews__left" type="button"><span class="visually-hidden">Влево</span></button>
-        <button class="reviews__right" type="button"><span class="visually-hidden">Вправо</span></button>
 
       </section>
 
       <section class="rate slider-rate">
         <h2 class="visually-hidden">Тарифы</h2>
-        <input class="slider-rate__toggle" type="radio" id="btn-a" name="toggle-rate">
+        <!--<input class="slider-rate__toggle" type="radio" id="btn-a" name="toggle-rate">
         <input class="slider-rate__toggle" type="radio" id="btn-b" name="toggle-rate" checked>
         <input class="slider-rate__toggle" type="radio" id="btn-c" name="toggle-rate">
 
@@ -171,6 +175,11 @@
           <label class="slider-rate__radio" for="btn-a"></label>
           <label class="slider-rate__radio" for="btn-b"></label>
           <label class="slider-rate__radio" for="btn-c"></label>
+        </div>-->
+        <div class="slider-rate__controls">
+          <button type="button" class="slider-rate__radio"><span class="visually-hidden">1</span></button>
+          <button type="button" class="slider-rate__radio" checked><span class="visually-hidden">2</span></button>
+          <button type="button" class="slider-rate__radio"><span class="visually-hidden">3</span></button>
         </div>
         <div class="rate__wrapper slider-rate__wrapper">
           <div class="rate__list slider-rate__list">
@@ -266,7 +275,7 @@
           <ul class="contacts__list">
             <li class="contacts__item">
               <p class="contacts__title">Звоните:</p>
-              <a class="contacts__phone">
+              <a class="contacts__phone" href="#">
                 <span class="contacts__phone-mobile">+7 (812) 555-66-66</span>
               </a>
             </li>
@@ -287,7 +296,7 @@
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
         <p class="map__wrapper">
-          <iframe class="map__size" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.735795529188!2d30.320583479851255!3d59.93652613263411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1506699811013" width="320" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe class="map__block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.735795529188!2d30.320583479851255!3d59.93652613263411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1506699811013" width="320" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
         </p>
       </section>
     </main>

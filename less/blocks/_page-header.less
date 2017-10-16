@@ -4,6 +4,17 @@
   z-index: 2;
 }
 
+@media (min-width: 960px) {
+  .page-header {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    max-width: 1200px;
+  }
+}
+
 .page-header__container {
   /*background-color: #283645;*/
   /*outline: 5px solid yellow;*/
@@ -26,10 +37,16 @@
 
 @media (min-width: 960px) {
   .page-header__container {
-    background-color: rgba(16, 22, 28, 0.3);
+    /*background-color: rgba(16, 22, 28, 0.3);*/
+    /*background-color: rgba(0, 0, 0, 0.3);*/
     width: 940px;
-    position: absolute;
-    top: 0;
+    /*position: absolute;
+    top: 0;*/
+    /*left: -50%;
+    margin-left: 50%;*/
+    /*left: 0;
+    right: 0;*/
+    margin: auto;
     padding: 0 10px;
     height: 110px;
     display: flex;
@@ -156,7 +173,7 @@
 
 @media (max-width: 959px) {
   .page-header__wrapper--transparent {
-    background-color: rgba(29, 38, 49, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     border-bottom: none;
   }
 
