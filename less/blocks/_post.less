@@ -201,7 +201,21 @@
   fill: #d22856;
 }
 
+.post__effects-button {
+  position: relative;
+}
+
+.post__effects-fill {
+  position: absolute;
+  top: 2px;
+  left: 116px;
+}
+
 @media (min-width: 660px) {
+  .post__effects-fill {
+    position: static;
+  }
+
   .post__effects-crop svg,
   .post__effects-fill svg {
     height: 24px;
