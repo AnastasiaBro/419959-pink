@@ -259,7 +259,7 @@
     justify-content: flex-start;
   }
 
-  .photo__item:first-child .photo__item-wrapper {
+  .photo__item--layout .photo__item-wrapper {
     justify-content: space-between;
   }
 
@@ -269,7 +269,7 @@
 }
 
 @media (min-width: 960px) {
-  .photo__item:first-child .photo__item-wrapper {
+  .photo__item--layout .photo__item-wrapper {
     padding-right: 32px;
   }
 }
@@ -298,7 +298,7 @@
 }
 
 @media (min-width: 660px) {
-  .photo__item:first-child {
+  .photo__item--layout {
     width: 620px;
     margin-bottom: 50px;
   }
@@ -316,18 +316,18 @@
 }
 
 @media (min-width: 960px) {
-  .photo__item:first-child {
-    width: 940px;
-    /*временно для сетки*/
-    height: 96px;
-  }
-
   .photo__item {
     margin-bottom: 54px;
   }
 
   .photo__item:nth-last-child(3) {
     margin-bottom: 0;
+  }
+
+  .photo__item--layout {
+    width: 940px;
+    min-height: 96px;
+    margin-bottom: 50px;
   }
 }
 
@@ -348,7 +348,7 @@
   width: 252px;
 }
 
-.photo__item:nth-child(1) .photo__top-description,
+.photo__item--layout .photo__top-description,
 .photo__item:nth-child(4) .photo__top-description {
   margin-bottom: 10px;
 }
@@ -362,7 +362,7 @@
     margin-bottom: 14px;
   }
 
-  .photo__item:nth-child(1) .photo__top-description {
+  .photo__item--layout .photo__top-description {
     order: 2;
     width: 564px;
     margin-bottom: 4px;
@@ -378,8 +378,14 @@
 }
 
 @media (min-width: 660px) {
-  .photo__item:nth-child(1) .photo__top-description {
+  .photo__item--layout .photo__top-description {
     width: 100%;
+  }
+}
+
+@media (min-width: 960px) {
+  .photo__item--layout .photo__top-description {
+    margin-bottom: 3px;
   }
 }
 
@@ -416,7 +422,7 @@
     width: 240px;
   }
 
-  .photo__item:first-child .photo__bottom {
+  .photo__item--layout .photo__bottom {
     justify-content: flex-end;
   }
 }
@@ -426,6 +432,11 @@
   margin-right: 19px;
   background: none;
   border: none;
+  cursor: pointer;
+}
+
+.photo__bottom-like:hover path {
+  fill: #283645;
 }
 
 @media (min-width: 660px) {

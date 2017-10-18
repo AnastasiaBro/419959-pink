@@ -46,14 +46,16 @@
   /*border: 3px solid #ffffff;*/
   width: 6px;
   height: 6px;
-  padding: 0;
+  padding: 3px 3px;
   border-radius: 50%;
+  border: 3px solid #f2f2f2;
   display: inline-block;
   vertical-align: middle;
-  margin: 0 7px;
+  margin: 0 5px;
   outline: none;
   position: relative;
   background-color: #bec2c7;
+  cursor: pointer;
 }
 
 .slider-rate__radio:hover {
@@ -62,6 +64,19 @@
 
 .slider-rate__radio:active {
   background-color: #e9ebec;
+}
+
+.slider-rate__radio--active,
+.slider-rate__radio--active:hover,
+.slider-rate__radio--active:active {
+  width: 6px;
+  height: 6px;
+  padding: 3px 3px;
+  top: 0;
+  background-color: #ffffff;
+  border: 3px solid #2d3b49;
+  border-radius: 50%;
+  cursor: default;
 }
 
 .slider-rate__controls {

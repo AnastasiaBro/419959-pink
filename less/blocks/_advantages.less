@@ -83,27 +83,22 @@
 
 @media (min-width: 960px) {
   .advantages__title::before {
-    content: "";
-    position: absolute;
-    bottom: -87px;
-    left: 0;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 74px 960px 0 0;
-    border-color: #ffffff transparent transparent transparent;
+    display: none;
   }
+}
 
-  .advantages__title::after {
-    content: "";
-    position: absolute;
-    bottom: -14px;
-    left: 0;
-    display: inline-block;
-    width: 960px;
-    height: 15px;
-    background-color: #ffffff;
+@media (min-width: 960px) {
+  .advantages {
+    background-image: url("../img/bg-triangle-white.svg");
+    background-size: 1200px;
+    background-repeat: no-repeat;
+    background-position: center 321px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .advantages {
+    background-size: 2560px;
   }
 }
 

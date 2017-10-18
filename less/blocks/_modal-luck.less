@@ -1,21 +1,29 @@
 .modal-luck {
   margin: 0 auto;
   min-height: 381px;
+  width: 320px;
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+  position: fixed;
+  z-index: 10;
+  top: 70px;
 }
 
 @media (min-width: 660px) {
   .modal-luck {
     width: 460px;
     min-height: 431px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 200px;
   }
 }
 
 @media (min-width: 960px) {
   .modal-luck {
     width: 780px;
-    min-height: 378px;
-    margin-bottom: 10px;
+    min-height: 377px;
+    /*margin-bottom: 10px;*/
+    top: 200px;
   }
 }
 
@@ -145,4 +153,8 @@
 .modal-luck__button:disabled {
   background-color: #e5e5e5;
   color: #ffffff;
+}
+
+.modal-luck--hidden {
+  display: none;
 }
