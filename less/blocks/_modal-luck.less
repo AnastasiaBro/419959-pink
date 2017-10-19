@@ -1,0 +1,160 @@
+.modal-luck {
+  margin: 0 auto;
+  min-height: 381px;
+  width: 320px;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+  position: fixed;
+  z-index: 10;
+  top: 70px;
+}
+
+@media (min-width: 660px) {
+  .modal-luck {
+    width: 460px;
+    min-height: 431px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 200px;
+  }
+}
+
+@media (min-width: 960px) {
+  .modal-luck {
+    width: 780px;
+    min-height: 377px;
+    /*margin-bottom: 10px;*/
+    top: 200px;
+  }
+}
+
+.modal-luck__first {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 31px;
+  background-color: #ffffff;
+}
+
+@media (min-width: 660px) {
+  .modal-luck__first {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 40px;
+    padding-bottom: 31px;
+  }
+}
+
+@media (min-width: 660px) {
+  .modal-luck__first {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+@media (min-width: 960px) {
+  .modal-luck__first {
+    padding-top: 45px;
+    padding-bottom: 38px;
+    padding-left: 190px;
+    padding-right: 190px;
+  }
+}
+
+.modal-luck__second {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 48px;
+  padding-bottom: 52px;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: 660px) {
+  .modal-luck__second {
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: center;
+  }
+}
+
+.modal-luck__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+@media (min-width: 660px) {
+  .modal-luck__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 960px) {
+  .modal-luck__title {
+    margin-bottom: 19px;
+  }
+}
+
+.modal-luck__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283645;
+  margin: 0;
+  text-align: center;
+}
+
+@media (min-width: 660px) {
+  .modal-luck__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.modal-luck__button {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #2aab6d;
+  border-style: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+
+  height: 63px;
+  width: 280px;
+}
+
+@media (min-width: 660px) {
+  .modal-luck__button {
+    width: 300px;
+  }
+}
+
+@media (min-width: 960px) {
+  .modal-luck__button {
+    width: 460px;
+  }
+}
+
+.modal-luck__button:hover {
+  background-color: #1c9b5e;
+}
+
+.modal-luck__button:active {
+  background-color: #1c9b5e;
+  color: #61b98f;
+}
+
+.modal-luck__button:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
+}
+
+.modal-luck--hidden {
+  display: none;
+}

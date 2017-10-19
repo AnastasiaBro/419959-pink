@@ -1,0 +1,152 @@
+.slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider__wrapper {
+  overflow: hidden;
+}
+
+.slider__list {
+  width: 300%;
+  /*transition: transform 0.8s ease;*/
+}
+
+@media (min-width: 960px) {
+  .slider__list {
+    width: 100%;
+  }
+}
+
+.slider__item {
+  float: left;
+  /*height: 230px;*/
+  width: 320px;
+}
+
+@media (min-width: 660px) {
+  .slider__item {
+    width: 660px;
+  }
+}
+
+@media (min-width: 960px) {
+  .slider__item {
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 800px;
+  }
+}
+
+.slider__controls {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+  order: 2;
+}
+
+@media (min-width: 660px) {
+  .slider__controls {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 960px) {
+  .slider__controls {
+    display: none;
+  }
+}
+
+.slider__radio {
+  /*border: 3px solid #ffffff;*/
+  width: 6px;
+  height: 6px;
+  padding: 3px 3px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+  outline: none;
+  position: relative;
+  background-color: #bec2c7;
+  cursor: pointer;
+}
+
+/*.slider__radio {
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  background-color: #bec2c7;
+  margin: 0 5px;
+  cursor: pointer;
+}*/
+
+.slider__radio:hover {
+  background-color: #7e868f;
+}
+
+.slider__radio:active {
+  background-color: #e9ebec;
+}
+
+.slider__radio--active,
+.slider__radio--active:hover,
+.slider__radio--active:active {
+  width: 6px;
+  height: 6px;
+  padding: 3px 3px;
+  top: 0;
+  background-color: #ffffff;
+  border: 3px solid #2d3b49;
+  border-radius: 50%;
+  cursor: default;
+}
+
+/*.slider__radio:checked {
+  background-color: #ffffff;
+  border: 3px solid #2d3b49;
+  border-radius: 50%;
+}*/
+
+/*.slider__toggle {
+  display: none;
+}*/
+
+/*#btn-1:checked ~ .slider__controls label[for="btn-1"],
+#btn-2:checked ~ .slider__controls label[for="btn-2"],
+#btn-3:checked ~ .slider__controls label[for="btn-3"] {
+  background-color: #ffffff;
+  border: 3px solid #2d3b49;
+  border-radius: 50%;
+}
+
+#btn-1:checked ~ .slider__wrapper .slider__list {
+  transform: translateX(0);
+}
+
+#btn-2:checked ~ .slider__wrapper .slider__list {
+  transform: translateX(-320px);
+}
+
+#btn-3:checked ~ .slider__wrapper .slider__list {
+  transform: translateX(-640px);
+}
+
+@media (min-width: 660px) {
+  #btn-1:checked ~ .slider__wrapper .slider__list {
+    transform: translateX(0);
+  }
+
+  #btn-2:checked ~ .slider__wrapper .slider__list {
+    transform: translateX(-660px);
+  }
+
+  #btn-3:checked ~ .slider__wrapper .slider__list {
+    transform: translateX(-1320px);
+  }
+}*/
