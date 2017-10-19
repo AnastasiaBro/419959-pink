@@ -70,6 +70,7 @@
     padding-right: 300px;
     padding-top: 175px;
     padding-bottom: 99px;
+    width: 360px;
 
     font-size: 50px;
     line-height: 60px;
@@ -219,6 +220,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  position: relative;
 }
 
 @media (min-width: 660px) {
@@ -227,6 +229,7 @@
     flex-wrap: wrap;
     align-items: stretch;
     align-content: stretch;
+    position: relative;
   }
 }
 
@@ -428,7 +431,7 @@
 }
 
 .photo__bottom-like {
-  padding: 0;
+  padding-top: 2px;
   margin-right: 19px;
   background: none;
   border: none;
@@ -448,6 +451,12 @@
   }
 }
 
+@media (min-width: 960px) {
+  .photo__bottom-like {
+    padding-top: 0;
+  }
+}
+
 .photo__bottom-text {
   font-size: 12px;
   line-height: 24px;
@@ -463,20 +472,21 @@
   height: auto;
 }
 
-.photo__link-wide::before {
+.photo__list::before {
   content: "";
   position: absolute;
-  right: 20px;
+  top: -137px;
+  right: 0;
   height: 36px;
   width: 140px;
   background-color: #d22856;
 }
 
-.photo__link-wide::after {
+.photo__list::after {
   content: "Панорама дня";
   position: absolute;
-  top: 7px;
-  right: 40px;
+  top: -130px;
+  right: 20px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 12px;
   line-height: 24px;
@@ -486,21 +496,21 @@
 }
 
 @media (min-width: 660px) {
-  .photo__link-wide::before {
+  .photo__list::before {
     content: "";
     position: absolute;
-    top: 57px;
-    right: 20px;
+    top: -452px;
+    right: 0;
     height: 36px;
     width: 140px;
     background-color: #d22856;
   }
 
-  .photo__link-wide::after {
+  .photo__list::after {
     content: "Панорама дня";
     position: absolute;
-    top: 64px;
-    right: 40px;
+    top: -445px;
+    right: 20px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 12px;
     line-height: 24px;
@@ -511,14 +521,13 @@
 }
 
 @media (min-width: 960px) {
-  .photo__link-wide::before {
+  /*.photo__link-wide::before {
     display: none;
   }
 
   .photo__link-wide::after {
     display: none;
-  }
-
+  }*/
   .photo__list::before {
     content: "";
     position: absolute;
