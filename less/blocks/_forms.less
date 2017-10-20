@@ -251,6 +251,30 @@
     right: 60px;
     background-color: #e5e5e5;
   }
+
+  .forms__formline--contacts:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    right: 80px;
+    top: 21px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    z-index: 6;
+  }
+
+  .forms__formline--contacts:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    right: 81px;
+    top: 24px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 14px;
+    z-index: 6;
+  }
 }
 
 @media (min-width: 960px) {
@@ -264,6 +288,30 @@
 
   .forms__formline--contacts::after {
     right: 2px;
+  }
+
+  .forms__formline--contacts:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    right: 22px;
+    top: 21px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    z-index: 6;
+  }
+
+  .forms__formline--contacts:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    right: 23px;
+    top: 24px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 14px;
+    z-index: 6;
   }
 }
 
@@ -401,6 +449,21 @@
   }
 }
 
+.forms__wrapper-textarea {
+  font-family: "Open Sans", "Arial", sans-serif;
+  margin: 0;
+  width: 280px;
+  margin-bottom: 0;
+  transform: translateY(38px);
+}
+
+@media (min-width: 660px) {
+  .forms__wrapper-textarea {
+    transform: translateY(0);
+    width: 260px;
+  }
+}
+
 .forms__textarea,
 .forms__textarea::-webkit-input-placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
@@ -452,18 +515,8 @@
   border-color: #d22856;
 }
 
-.forms__wrapper-textarea {
-  margin: 0;
-  width: 280px;
-  margin-bottom: 0;
-  transform: translateY(38px);
-}
-
-@media (min-width: 660px) {
-  .forms__wrapper-textarea {
-    transform: translateY(0);
-    width: 260px;
-  }
+.forms__textarea-label {
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .forms__button {

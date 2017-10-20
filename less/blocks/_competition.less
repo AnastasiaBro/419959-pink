@@ -8,28 +8,42 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
 
-  background-position: center -10px;
+  background-position: center 0;
   background-color: #000000;
   min-height: 240px;
   margin-top: -70px;
   z-index: 0;
+  background-size: 700px auto;
   /*padding-top: 30px;
   padding-bottom: 53px;*/
   /*min-height: 100px;*/
   /*outline: 5px solid yellow;*/
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-position: center 0;
+    background-size: 700px auto;
+  }
 }
 
 @media (min-width: 660px) {
   .competition__image {
     width: 660px;
     padding: 0;
-    background-size: 160%;
-    background-position: center -30px;
-    min-height: 440px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center 0;
+    min-height: 439px;
     margin-top: -110px;
     z-index: 0;
+    background-size: 1200px auto;
     /* Временно для сетки */
     /*min-height: 329px;*/
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-position: center 0;
+      background-size: 1200px auto;
+    }
   }
 }
 
@@ -38,8 +52,15 @@
     width: 100%;
     margin-top: 0;
     min-height: 394px;
-    background-position: center -400px;
-    background-size: 200%;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center 0;
+    background-size: 2560px auto;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-position: center 0;
+      background-size: 2560px auto;
+    }
   }
 }
 
