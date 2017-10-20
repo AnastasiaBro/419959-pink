@@ -945,12 +945,12 @@
       // Can we just rely on the browser/polyfill to do it?)
       unparsedSize = unparsedSize.join(" ");
       if (!(pf.matchesMedia( unparsedSize ) ) ) {
-	       continue;
-       }
+        continue;
+      }
 
-       // 5. Return size and exit this algorithm.
-       return size;
-     }
+      // 5. Return size and exit this algorithm.
+      return size;
+    }
 
     // If the above algorithm exhausts unparsed sizes list without returning a
     // size value, return 100vw.
