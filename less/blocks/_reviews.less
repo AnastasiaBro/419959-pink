@@ -194,14 +194,15 @@
 
 @media (min-width: 960px) {
   .reviews__list::after {
-    content: "Цитата";
+    content: "";
     position: absolute;
-    top: -100px;
+    background-image: url("../img/icon-quotes.svg");
+    background-size: 79px 64px;
+    top: -102px;
     left: 433px;
     display: inline-block;
     width: 79px;
-    height: 63px;
-    background-color: pink;
+    height: 64px;
   }
 }
 
@@ -271,24 +272,45 @@
     border: none;
     height: 41px;
     width: 22px;
-    background-color: pink;
   }
 }
 
 @media (min-width: 960px) {
   .reviews__left {
     position: absolute;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    opacity: 0.3;
     left: 0;
-    top: 30px;
+    top: 39px;
+    background-color: transparent;
     outline: none;
+  }
+
+  .reviews__left:hover {
+    opacity: 0.6;
+  }
+
+  .reviews__left:active {
+    opacity: 0.1;
   }
 }
 
 @media (min-width: 960px) {
   .reviews__right {
     position: absolute;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    opacity: 0.3;
     right: 0;
-    top: 30px;
+    top: 39px;
+    background-color: transparent;
     outline: none;
+  }
+
+  .reviews__right:hover {
+    opacity: 0.6;
+  }
+
+  .reviews__right:active {
+    opacity: 0.1;
   }
 }

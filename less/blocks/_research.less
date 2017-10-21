@@ -28,25 +28,69 @@
 
 @media (min-width: 660px) {
   .research__container::before {
-    content: "Здесь будет таймер";
+    content: "";
     position: absolute;
+    background-image: url("../img/icon-timer.svg");
+    background-size: 239px 276px;
+    background-repeat: no-repeat;
     width: 239px;
     height: 276px;
-    background-color: pink;
     left: 20px;
     top: 59px;
+    z-index: 10;
+  }
+
+  .research__container::after {
+    content: "24";
+    font-size: 96px;
+    line-height: 149px;
+    font-weight: 700;
+    color: #d22856;
+    position: absolute;
+    width: 174px;
+    height: 169px;
+    background-color: #ffffff;
+    border: 14px solid #d22856;
+    border-radius: 50%;
+    left: 38px;
+    top: 115px;
+    text-align: center;
+    padding-top: 5px;
+    z-index: 10;
   }
 }
 
 @media (min-width: 960px) {
   .research__container::before {
-    content: "Здесь будет таймер";
+    content: "";
     position: absolute;
+    background-image: url("../img/icon-timer.svg");
+    background-size: 299px 345px;
+    background-repeat: no-repeat;
     width: 299px;
     height: 345px;
-    background-color: pink;
     left: 10px;
     top: 18px;
+    z-index: 10;
+  }
+
+  .research__container::after {
+    content: "24";
+    font-size: 120px;
+    line-height: 187px;
+    font-weight: 700;
+    color: #d22856;
+    position: absolute;
+    width: 221px;
+    height: 211px;
+    background-color: #f2f2f2;
+    border: 16px solid #d22856;
+    border-radius: 50%;
+    left: 33px;
+    top: 88px;
+    text-align: center;
+    padding-top: 10px;
+    z-index: 10;
   }
 }
 

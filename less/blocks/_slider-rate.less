@@ -47,10 +47,11 @@
   height: 6px;
   padding: 3px 3px;
   border-radius: 50%;
-  border: 3px solid #f2f2f2;
+  border: none;
+  /*border: 3px solid #f2f2f2;*/
   display: inline-block;
   vertical-align: middle;
-  margin: 0 5px;
+  margin: 0 7px;
   outline: none;
   position: relative;
   background-color: #bec2c7;
@@ -63,6 +64,19 @@
 
 .slider-rate__radio:active {
   background-color: #e9ebec;
+}
+
+.slider-rate__radio--active::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 6px;
+  height: 6px;
+  /*padding: 3px 3px;*/
+  background-color: #ffffff;
+  border: 3px solid #2d3b49;
+  border-radius: 50%;
 }
 
 .slider-rate__radio--active,
