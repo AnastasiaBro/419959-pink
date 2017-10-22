@@ -183,6 +183,7 @@
 
 .post__effects-contrast,
 .post__effects-fill {
+  fill: #283645;
   opacity: 0.3;
 }
 
@@ -196,9 +197,8 @@
   opacity: 1;
 }
 
-.post__effects-fill:active path:nth-child(2),
-.post__effects-fill:active rect,
-.post__effects-contrast:active path {
+.post__effects-fill:active,
+.post__effects-contrast:active {
   fill: #d22856;
 }
 
@@ -224,20 +224,19 @@
     width: 16px;
   }
 
-  .post__effects-fill,
+  /*.post__effects-fill,
   .post__effects-contrast {
-    opacity: 1;
-  }
 
+  }*/
   .post__effects-fill:hover,
   .post__effects-contrast:hover {
     opacity: 1;
   }
 
-  .post__effects-fill path:nth-child(2),
-  .post__effects-fill rect,
-  .post__effects-contrast path {
+  .post__effects-fill,
+  .post__effects-contrast {
     fill: #d22856;
+    opacity: 1;
   }
 }
 
