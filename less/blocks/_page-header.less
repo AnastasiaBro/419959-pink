@@ -104,17 +104,24 @@
   height: 23px;
   width: 75px;
   z-index: 2;
+  fill: #ffffff;
 
-  &:hover path {
+  &:hover {
     /*opacity: 1;
     position: relative;*/
     fill: #d22856;
   }
 
-  &:active path {
+  &:active {
     fill: #ffffff;
     opacity: 0.3;
   }
+}
+
+.page-header__logo-mobile {
+  display: block;
+  pointer-events: none;
+  /*fill: #ffffff;*/
 }
 /*.page-header__logo:hover:not(:active)::before {
   content: "";
@@ -142,6 +149,7 @@
 
   .page-header__logo-tablet {
     display: block;
+    pointer-events: none;
   }
 }
 
@@ -152,6 +160,7 @@
 
   .page-header__logo-desktop {
     display: block;
+    pointer-events: none;
   }
 }
 
@@ -161,12 +170,13 @@
     text-align: center;
     height: 40px;
     width: 147px;
+    fill: #ffffff;
 
-    &:hover path {
+    &:hover {
       fill: #d22856;
     }
 
-    &:active path {
+    &:active {
       fill: #ffffff;
       opacity: 0.3;
     }
@@ -181,12 +191,13 @@
     height: 40px;
     width: 147px;
     opacity: 1;
+    fill: #ffffff;
 
-    &:hover path {
+    &:hover {
       fill: #d22856;
     }
 
-    &:active path {
+    &:active {
       fill: #ffffff;
       opacity: 0.3;
     }
