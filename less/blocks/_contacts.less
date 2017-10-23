@@ -178,7 +178,6 @@
 
 .contacts__mail-block {
   text-decoration: none;
-  display: block;
 }
 
 .contacts__mail-block:hover {
@@ -201,4 +200,10 @@
 .contacts__phone-mobile,
 .contacts__mail {
   display: block;
+}
+
+@media (min-width: 960px) {
+  .contacts__mail {
+    display: inline-block;
+  }
 }
