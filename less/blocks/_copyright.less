@@ -3,18 +3,40 @@
   line-height: 18px;
   font-weight: 400;
   color: #283645;
+  margin-left: 5px;
+}
+
+@media (min-width: 660px) {
+  .copyright__text {
+    margin-top: 16px;
+    margin-bottom: 12px;
+  }
 }
 
 @media (min-width: 960px) {
   .copyright__text {
     font-size: 18px;
+    margin-left: 0;
   }
+}
+
+.copyright__logo {
+  width: 41px;
+  height: 41px;
+  /*margin-right: 5px;*/
 }
 
 @media (min-width: 660px) {
   .copyright__logo {
+    margin-top: 7px;
+    margin-left: 2px;
+  }
+}
+
+@media (min-width: 960px) {
+  .copyright__logo {
     margin-top: 9px;
-    margin-left: 15px;
+    margin-left: 0;
   }
 }
 
@@ -33,4 +55,10 @@
 
 .copyright__logo svg {
   pointer-events: none;
+}
+
+@media (min-width: 660px) {
+  .copyright__logo svg {
+    padding-left: 7px;
+  }
 }
