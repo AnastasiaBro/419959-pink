@@ -121,8 +121,8 @@
   .forms__wrapper {
     padding-left: 0;
     padding-right: 0;
-    padding-top: 35px;
-    padding-bottom: 12px;
+    padding-top: 42px;
+    padding-bottom: 13px;
   }
 }
 
@@ -135,23 +135,41 @@
 
   .forms__wrapper:nth-child(4) {
     width: 431px;
-    margin-bottom: 57px;
+    margin-bottom: 65px;
+    margin-top: 8px;
+    padding-top: 45px;
+    padding-bottom: 10px;
   }
 
   .forms__wrapper:nth-child(3) {
     width: 940px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    margin-bottom: 65px;
   }
 
   .forms__wrapper:nth-child(2) {
     width: 940px;
+    padding-top: 45px;
+    padding-bottom: 9px;
+    margin-bottom: 66px;
   }
 
   .forms__wrapper:nth-child(5) {
     width: 940px;
+  }
+}
+
+@media (min-width: 960px) {
+  .forms__wrapper:nth-child(3) .forms__title {
+    width: 254px;
+    height: 18px;
+    white-space: nowrap;
+    position: absolute;
+    top: -10px;
+    left: 340px;
   }
 }
 
@@ -415,8 +433,10 @@
 }
 
 .forms__title {
-  transform: translateY(56px);
+  /*transform: translateY(56px);*/
   text-align: center;
+  margin-right: 0;
+  margin-left: 0;
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 67px;
@@ -428,7 +448,7 @@
 
 @media (min-width: 660px) {
   .forms__title--hidden {
-    display: block;
+    display: inline-block;
   }
 }
 
@@ -436,11 +456,35 @@
   .forms__title {
     padding-left: 27px;
     padding-right: 27px;
+    text-align: left;
+    position: absolute;
+    top: -10px;
+    /*left: 50%;
+    transform: translate(-50%, -50%);*/
+    background-color: #ffffff;
+    margin: 0 auto;
+  }
+
+  .forms__wrapper:nth-child(2) .forms__title {
+    left: 255px;
+  }
+
+  .forms__wrapper:nth-child(5) .forms__title {
+    left: 336px;
+    width: auto;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
 .forms__title--radio {
   margin-bottom: 63px;
+}
+
+@media (min-width: 960px) {
+  .forms__title--radio {
+    left: 28px;
+  }
 }
 
 @media (min-width: 660px) {
@@ -669,7 +713,7 @@
   }
 
   .forms__option:nth-child(-n+2) {
-    margin-right: 13px;
+    margin-right: 20px;
   }
 
   /*.forms__option:nth-child(2) {
