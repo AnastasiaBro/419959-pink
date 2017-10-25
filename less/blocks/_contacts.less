@@ -165,19 +165,14 @@
   display: block;
 }
 
+.contacts__address-block {
+  text-decoration: none;
+}
+
 .contacts__mail {
   margin-bottom: 5px;
   text-decoration: none;
-}
-
-@media (min-width: 660px) {
-  .contacts__mail {
-    margin-bottom: 0;
-  }
-}
-
-.contacts__mail-block {
-  text-decoration: none;
+  display: inline-block;
 }
 
 .contacts__mail-block:hover {
@@ -188,7 +183,18 @@
   }
 }
 
-.contacts__mail-block:active {
+@media (min-width: 660px) {
+  .contacts__mail {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__mail-block,
+.contacts__address-block {
+  text-decoration: none;
+}
+
+.contacts__mail-block:active:not(:hover) {
   border-bottom: none;
 
   .contacts__mail {
@@ -199,11 +205,13 @@
 
 .contacts__phone-mobile,
 .contacts__mail {
-  display: block;
+  /*display: block;*/
 }
 
 @media (min-width: 960px) {
-  .contacts__mail {
+  .contacts__mail,
+  .contacts__address,
+  .contacts__phone-mobile {
     display: inline-block;
   }
 }
