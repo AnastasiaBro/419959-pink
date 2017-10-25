@@ -64,7 +64,7 @@
           <picture class="photo__image-wrapper">
             <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-            <img class="photo__image-wide" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама">
+            <img data-object-fit="cover" class="photo__image-wide" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама">
           </picture>
         </a>
         <div class="photo__wrapper">
@@ -364,5 +364,6 @@
     <script src="js/picturefill.js"></script>
     <script src="js/svgxuse.js"></script>
     <script src="js/svg4everybody.js"></script>
+    <script src="js/objectfit.js"></script>
   </body>
 </html>
