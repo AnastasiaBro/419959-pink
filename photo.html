@@ -81,7 +81,7 @@
                   Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
                 </p>
                 <div class="photo__bottom">
-                  <a class="button photo__bottom-like" href="#">
+                  <a class="photo__bottom-like button" href="#">
                     <svg width="13px" height="12px">
                       <use xlink:href="#sprite-icon-heart"></use>
                     </svg>
@@ -106,7 +106,7 @@
                   Вчера он на луну летал, сегодня в руки к нам попал.
                 </p>
                 <div class="photo__bottom">
-                  <a class="button photo__bottom-like" href="#">
+                  <a class="photo__bottom-like button" href="#">
                     <svg width="13px" height="12px">
                       <use xlink:href="#sprite-icon-heart"></use>
                     </svg>
@@ -131,7 +131,7 @@
                   Соседи будут рады!
                 </p>
                 <div class="photo__bottom">
-                  <a class="button photo__bottom-like" href="#">
+                  <a class="photo__bottom-like button" href="#">
                     <svg width="13px" height="12px">
                       <use xlink:href="#sprite-icon-heart"></use>
                     </svg>
@@ -156,7 +156,7 @@
                   Здесь могла быть ваша цитата о высоком и вечном.
                 </p>
                 <div class="photo__bottom">
-                  <a class="button photo__bottom-like" href="#">
+                  <a class="photo__bottom-like button" href="#">
                     <svg width="13px" height="12px">
                       <use xlink:href="#sprite-icon-heart"></use>
                     </svg>
@@ -181,7 +181,7 @@
                   Самая кубанская в мире!
                 </p>
                 <div class="photo__bottom">
-                  <a class="button photo__bottom-like" href="#">
+                  <a class="photo__bottom-like button" href="#">
                     <svg width="13px" height="12px">
                       <use xlink:href="#sprite-icon-heart"></use>
                     </svg>
@@ -206,7 +206,7 @@
                   Где снег-то?
                 </p>
                 <div class="photo__bottom">
-                  <a class="button photo__bottom-like" href="#">
+                  <a class="photo__bottom-like button" href="#">
                     <svg width="13px" height="12px">
                       <use xlink:href="#sprite-icon-heart"></use>
                     </svg>
@@ -231,11 +231,12 @@
                   Всем GM и взаимные лайки!
                 </p>
                 <div class="photo__bottom">
-                  <a class="button photo__bottom-like" href="#">
+                  <a class="photo__bottom-like button" href="#">
                     <svg width="13px" height="12px">
                       <use xlink:href="#sprite-icon-heart"></use>
                     </svg>
-                  <span class="visually-hidden">Поставить лайк</span></a>
+                    <span class="visually-hidden">Поставить лайк</span>
+                  </a>
                   <p class="photo__bottom-text">Нравится: 2560</p>
                 </div>
               </div>
@@ -259,7 +260,7 @@
           <div class="post__effects">
             <div class="post__effects-button">
               <button class="post__effects-crop post__active" type="button">
-                <svg width="48px" height="48px">
+                <svg class="post__crop-image" width="48px" height="48px">
                   <use xlink:href="#sprite-icon-editor-crop"></use>
                 </svg>
                 <!--<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
@@ -269,7 +270,7 @@
                 <span class="visually-hidden">Обрезать</span>
               </button>
               <button class="post__effects-fill post__active" type="button">
-                <svg width="48px" height="48px">
+                <svg class="post__fill-image" width="48px" height="48px">
                   <use xlink:href="#sprite-icon-editor-fill"></use>
                 </svg>
                 <!--<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
@@ -280,7 +281,7 @@
                 <span class="visually-hidden">Залить</span>
               </button>
               <button class="post__effects-contrast post__active" type="button">
-                <svg width="32px" height="32px">
+                <svg class="post__contrast-image" width="32px" height="32px">
                   <use xlink:href="#sprite-icon-editor-contrast"></use>
                 </svg>
                 <!--<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
@@ -305,8 +306,8 @@
             </div>
 
             <div class="post__button">
-              <button class="button post__button-add" type="submit">Запостить</button>
-              <button class="button post__button-cancel" type="submit">Отмена</button>
+              <button class="post__button-add button" type="submit">Запостить</button>
+              <button class="post__button-cancel button" type="submit">Отмена</button>
             </div>
           </div>
         </div>
@@ -352,8 +353,8 @@
 
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="button copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg width="41px" height="41px">
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__image" width="41px" height="41px">
               <use xlink:href="#sprite-htmlacademy"></use>
             </svg>
           </a>
