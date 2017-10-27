@@ -151,7 +151,7 @@
 }
 
 .contacts__phone,
-.contacts__mail,
+.contacts__mail-block,
 .contacts__address {
   font-size: 24px;
   line-height: 30px;
@@ -176,10 +176,11 @@
 }
 
 .contacts__mail-block:hover {
-  border-bottom: 1px solid @bg-darkblue;
-
+border-bottom: 1px solid @bg-darkblue;
+color: @bg-darkblue;
   .contacts__mail {
-    color: @bg-darkblue;
+
+
   }
 }
 
@@ -196,11 +197,14 @@
 }
 
 .contacts__mail-block:active {
-  border-bottom: none;
+border-bottom: none;
+color: rgba(40, 54, 69, 0.3);
 
   .contacts__mail {
-    color: @bg-darkblue;
-    opacity: 0.3;
+    /*color: @bg-darkblue;*/
+
+    /*opacity: 0.3;*/
+
   }
 }
 
