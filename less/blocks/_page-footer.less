@@ -81,7 +81,7 @@
   .page-footer__logo-image {
     margin-top: 36px;
     margin-bottom: 51px;
-    fill: #283645;
+    fill: @bg-darkblue;
   }
 }
 
@@ -92,7 +92,7 @@
 
   .page-footer__logo-desktop {
     display: block;
-    fill: #283645;
+    fill: @bg-darkblue;
     margin-top: 70px;
     margin-bottom: 87px;
   }
@@ -100,12 +100,24 @@
 
 .page-footer__logo-image:hover:not(:active),
 .page-footer__logo-desktop:hover:not(:active) {
-  fill: #d22856;
+  fill: @bg-pink;
 }
 
 .page-footer__logo-image:active,
 .page-footer__logo-desktop:active {
   opacity: 0.3;
+}
+
+.page-footer__logo-image--index:hover:not(:active),
+.page-footer__logo-desktop--index:hover:not(:active) {
+  fill: @bg-darkblue;
+  cursor: default;
+}
+
+.page-footer__logo-image--index:active,
+.page-footer__logo-desktop--index:active {
+  opacity: 1;
+  cursor: default;
 }
 
 .page-footer--index {
