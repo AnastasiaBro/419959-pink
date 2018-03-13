@@ -1,0 +1,1146 @@
+@media (min-width: @mobile-width) {
+  .card {
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+    //position: absolute;
+    //top: 50%;
+    //transform: translateY(-50%);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card {
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+    //position: absolute;
+    //top: 50%;
+    //transform: translateY(-50%);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //position: absolute;
+    //top: 50%;
+    //transform: translateY(-50%);
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .card__container {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    //transform: translateY(-50%);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__container {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    //transform: translateY(-50%);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__container {
+    width: 1120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    //transform: translateY(-50%);
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .card__title {
+    text-align: center;
+    font-family: "Exo Thin", "Arial", sans-serif;
+    color: white;
+    font-size: 36px;
+    font-weight: 100;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__title {
+    text-align: center;
+    font-family: "Exo Thin", "Arial", sans-serif;
+    color: white;
+    font-size: 36px;
+    font-weight: 100;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__title {
+    text-align: center;
+    font-family: "Exo Thin", "Arial", sans-serif;
+    color: white;
+    font-size: 36px;
+    font-weight: 100;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .card__box {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__box {
+    width: 750px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__box {
+    width: 1120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .card__food {
+    position: relative;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__food {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .card__food:last-child {
+    margin-left: 215px;
+    margin-right: 215px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__food {
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .card__food:last-child {
+    margin: 0;
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .card__example {
+    position: relative;
+    width: 312px;
+    background-color: @bg-grey;
+    padding-top: 20px;
+    border: 4px solid @light-blue;
+    border-radius: 15px;
+    clip-path: polygon(45px 0, 100% 0, 100% 100%, 0 100%, 0 45px);
+    cursor: pointer;
+  }
+
+  .card__example--first:before {
+    content: "0,5";
+    color: white;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 40px;
+    right: 26px;
+    z-index: 11;
+  }
+
+  .card__example--second:before {
+    content: "2";
+    color: white;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 40px;
+    right: 44px;
+    z-index: 11;
+  }
+
+  .card__example--third:before {
+    content: "5";
+    color: white;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 40px;
+    right: 45px;
+    z-index: 11;
+  }
+
+  .card__example:after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    transform: rotate(-45deg);
+    background-color: @light-blue;
+    position: absolute;
+    top: 18px;
+    left: -10px;
+    z-index: 10;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__example {
+    position: relative;
+    width: 312px;
+    background-color: @bg-grey;
+    padding-top: 20px;
+    border: 4px solid @light-blue;
+    border-radius: 15px;
+    clip-path: polygon(45px 0, 100% 0, 100% 100%, 0 100%, 0 45px);
+    cursor: pointer;
+  }
+
+  .card__example--first:before {
+    content: "0,5";
+    color: white;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 40px;
+    right: 26px;
+    z-index: 11;
+  }
+
+  .card__example--second:before {
+    content: "2";
+    color: white;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 40px;
+    right: 44px;
+    z-index: 11;
+  }
+
+  .card__example--third:before {
+    content: "5";
+    color: white;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 40px;
+    right: 45px;
+    z-index: 11;
+  }
+
+  .card__example:after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    transform: rotate(-45deg);
+    background-color: @light-blue;
+    position: absolute;
+    top: 18px;
+    left: -10px;
+    z-index: 10;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__example {
+    position: relative;
+    width: 312px;
+    background-color: @bg-grey;
+    padding-top: 20px;
+    border: 4px solid @light-blue;
+    border-radius: 15px;
+    clip-path: polygon(45px 0, 100% 0, 100% 100%, 0 100%, 0 45px);
+    cursor: pointer;
+  }
+
+  .card__example--first:before {
+    content: "0,5";
+    color: white;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 40px;
+    right: 26px;
+    z-index: 11;
+  }
+
+  .card__example--second:before {
+    content: "2";
+    color: white;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 40px;
+    right: 44px;
+    z-index: 11;
+  }
+
+  .card__example--third:before {
+    content: "5";
+    color: white;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 40px;
+    right: 45px;
+    z-index: 11;
+  }
+
+  .card__example:after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    transform: rotate(-45deg);
+    background-color: @light-blue;
+    position: absolute;
+    top: 18px;
+    left: -10px;
+    z-index: 10;
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .card__food-kind {
+    display: block;
+    color: @text-grey;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 45px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .card__food-kind-active {
+    display: none;
+    color: @pink;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 45px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__food-kind {
+    display: block;
+    color: @text-grey;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 45px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .card__food-kind-active {
+    display: none;
+    color: @pink;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 45px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__food-kind {
+    display: block;
+    color: @text-grey;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 45px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .card__food-kind-active {
+    display: none;
+    color: @pink;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 45px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .card__name {
+    color: black;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-left: 43px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__name {
+    color: black;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-left: 43px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__name {
+    color: black;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-left: 43px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .card__filling {
+    //display: block;
+    color: black;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 45px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__filling {
+    //display: block;
+    color: black;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 45px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__filling {
+    //display: block;
+    color: black;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 45px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .card__description {
+    display: block;
+    color: @text-grey;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    margin-left: 45px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    width: 135px;
+    min-height: 48px;
+  }
+
+  .card__description--bold, .card__description--mouse {
+    font-weight: 700;
+  }
+
+  /*.card__description--last {
+    margin-bottom: 24px;
+  }*/
+}
+
+@media (min-width: @tablet-width) {
+  .card__description {
+    display: block;
+    color: @text-grey;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    margin-left: 45px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    width: 135px;
+    min-height: 48px;
+  }
+
+  .card__description--bold, .card__description--mouse {
+    font-weight: 700;
+  }
+
+  /*.card__description--last {
+    margin-bottom: 24px;
+  }*/
+}
+
+@media (min-width: @desktop-width) {
+  .card__description {
+    display: block;
+    color: @text-grey;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    margin-left: 45px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    width: 135px;
+    min-height: 48px;
+  }
+
+  .card__description--bold, .card__description--mouse {
+    font-weight: 700;
+  }
+
+  /*.card__description--last {
+    margin-bottom: 24px;
+  }*/
+}
+
+@media (min-width: @mobile-width) {
+  .card__image-container {
+    position: relative;
+    width: 250px;
+    height: 265px;
+    overflow: hidden;
+    z-index: 5;
+    border: 0px solid transparent;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__image-container {
+    position: relative;
+    width: 250px;
+    height: 265px;
+    overflow: hidden;
+    z-index: 5;
+    border: 0px solid transparent;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__image-container {
+    position: relative;
+    width: 250px;
+    height: 265px;
+    overflow: hidden;
+    z-index: 5;
+    border: 0px solid transparent;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .card__image {
+    //width: 75%;
+    //overflow: hidden;
+    margin-left: -30px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__image {
+    //width: 75%;
+    //overflow: hidden;
+    margin-left: -30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__image {
+    //width: 75%;
+    //overflow: hidden;
+    margin-left: -30px;
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .card__food-weight {
+    background-color: @light-blue;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    z-index: 10;
+  }
+
+  .card__food-weight:before {
+    content: "кг";
+    color: white;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 7px;
+    right: 30px;
+    z-index: 11;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__food-weight {
+    background-color: @light-blue;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    z-index: 10;
+  }
+
+  .card__food-weight:before {
+    content: "кг";
+    color: white;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 7px;
+    right: 30px;
+    z-index: 11;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__food-weight {
+    background-color: @light-blue;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    z-index: 10;
+  }
+
+  .card__food-weight:before {
+    content: "кг";
+    color: white;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 7px;
+    right: 30px;
+    z-index: 11;
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .card__press {
+    color: white;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .card__press-href {
+    color: @light-blue;
+    text-decoration: none;
+    border-bottom: 1px dashed @light-blue;
+    cursor: pointer;
+  }
+
+  .card__press--blue {
+    color: @light-blue;
+  }
+
+  .card__press-hover {
+    color: white;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .card__press-disabled {
+    color: @yellow;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__press {
+    color: white;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: center;
+    width: 320px;
+  }
+
+  .card__press-href {
+    color: @light-blue;
+    text-decoration: none;
+    border-bottom: 1px dashed @light-blue;
+    cursor: pointer;
+  }
+
+  .card__press--blue {
+    color: @light-blue;
+  }
+
+  .card__press-hover {
+    color: white;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: center;
+    width: 320px;
+  }
+
+  .card__press-disabled {
+    color: @yellow;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: center;
+    width: 320px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__press {
+    color: white;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .card__press-href {
+    color: @light-blue;
+    text-decoration: none;
+    border-bottom: 1px dashed @light-blue;
+    cursor: pointer;
+  }
+
+  .card__press--blue {
+    color: @light-blue;
+  }
+
+  .card__press-hover {
+    color: white;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .card__press-disabled {
+    color: @yellow;
+    font-family: "Trebuchet", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .card__food--hover {
+    .card__example {
+      border: 4px solid @hover-blue;
+    }
+
+    .card__food-weight {
+      background-color: @hover-blue;
+    }
+
+    .card__example:after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      transform: rotate(-45deg);
+      background-color: @hover-blue;
+      position: absolute;
+      top: 18px;
+      left: -10px;
+      z-index: 10;
+    }
+
+    .card__press-href {
+      color: @hover-blue;
+      text-decoration: none;
+      border-bottom: 1px dashed @hover-blue;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__food--hover {
+    .card__example {
+      border: 4px solid @hover-blue;
+    }
+
+    .card__food-weight {
+      background-color: @hover-blue;
+    }
+
+    .card__example:after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      transform: rotate(-45deg);
+      background-color: @hover-blue;
+      position: absolute;
+      top: 18px;
+      left: -10px;
+      z-index: 10;
+    }
+
+    .card__press-href {
+      color: @hover-blue;
+      text-decoration: none;
+      border-bottom: 1px dashed @hover-blue;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__food--hover {
+    .card__example {
+      border: 4px solid @hover-blue;
+    }
+
+    .card__food-weight {
+      background-color: @hover-blue;
+    }
+
+    .card__example:after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      transform: rotate(-45deg);
+      background-color: @hover-blue;
+      position: absolute;
+      top: 18px;
+      left: -10px;
+      z-index: 10;
+    }
+
+    .card__press-href {
+      color: @hover-blue;
+      text-decoration: none;
+      border-bottom: 1px dashed @hover-blue;
+    }
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .card__food--active {
+    position: relative;
+    z-index: 22;
+
+    .card__example {
+      border: 4px solid @pink;
+    }
+
+    .card__food-weight {
+      background-color: @pink;
+    }
+
+    .card__example:after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      transform: rotate(-45deg);
+      background-color: @pink;
+      position: absolute;
+      top: 18px;
+      left: -10px;
+      z-index: 10;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__food--active {
+    position: relative;
+    z-index: 22;
+
+    .card__example {
+      border: 4px solid @pink;
+    }
+
+    .card__food-weight {
+      background-color: @pink;
+    }
+
+    .card__example:after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      transform: rotate(-45deg);
+      background-color: @pink;
+      position: absolute;
+      top: 18px;
+      left: -10px;
+      z-index: 10;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__food--active {
+    position: relative;
+    z-index: 22;
+
+    .card__example {
+      border: 4px solid @pink;
+    }
+
+    .card__food-weight {
+      background-color: @pink;
+    }
+
+    .card__example:after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      transform: rotate(-45deg);
+      background-color: @pink;
+      position: absolute;
+      top: 18px;
+      left: -10px;
+      z-index: 10;
+    }
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .card__food--disabled {
+    position: relative;
+    z-index: 22;
+
+    .card__food-kind, .card__name, .card__filling, .card__description {
+      color: @text-disabled;
+    }
+
+    .card__image {
+      opacity: 0.5;
+    }
+
+    .card__example {
+      border: 4px solid @border-disabled;
+    }
+
+    .card__food-weight {
+      background-color: @border-disabled;
+    }
+
+    .card__example:after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      transform: rotate(-45deg);
+      background-color: @border-disabled;
+      position: absolute;
+      top: 18px;
+      left: -10px;
+      z-index: 10;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__food--disabled {
+    position: relative;
+    z-index: 22;
+
+    .card__food-kind, .card__name, .card__filling, .card__description {
+      color: @text-disabled;
+    }
+
+    .card__image {
+      opacity: 0.5;
+    }
+
+    .card__example {
+      border: 4px solid @border-disabled;
+    }
+
+    .card__food-weight {
+      background-color: @border-disabled;
+    }
+
+    .card__example:after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      transform: rotate(-45deg);
+      background-color: @border-disabled;
+      position: absolute;
+      top: 18px;
+      left: -10px;
+      z-index: 10;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__food--disabled {
+    position: relative;
+    z-index: 22;
+
+    .card__food-kind, .card__name, .card__filling, .card__description {
+      color: @text-disabled;
+    }
+
+    .card__image {
+      opacity: 0.5;
+    }
+
+    .card__example {
+      border: 4px solid @border-disabled;
+    }
+
+    .card__food-weight {
+      background-color: @border-disabled;
+    }
+
+    .card__example:after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      transform: rotate(-45deg);
+      background-color: @border-disabled;
+      position: absolute;
+      top: 18px;
+      left: -10px;
+      z-index: 10;
+    }
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .card__example-hover:hover {
+    .card__food-kind {
+      display: none;
+    }
+
+    .card__food-kind-active {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__example-hover:hover {
+    .card__food-kind {
+      display: none;
+    }
+
+    .card__food-kind-active {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__example-hover:hover {
+    .card__food-kind {
+      display: none;
+    }
+
+    .card__food-kind-active {
+      display: block;
+    }
+  }
+}
