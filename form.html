@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body class="body-style">
+
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
+    <header class="page-header">
+      <div class="page-header__container">
+        <div class="page-header__wrapper page-header__wrapper--none">   <!--page-header__wrapper--none, page-header__wrapper--transparent-->
+          <a class="page-header__logo" href="index.html">
+            <svg class="page-header__logo-mobile" width="74.426px" height="22.859px">
+              <use xlink:href="#sprite-logo-pink-white-mobile"></use>
+            </svg>
+            <svg class="page-header__logo-tablet" width="146.3px" height="40.375px">
+              <use xlink:href="#sprite-logo-pink-white-tablet"></use>
+            </svg>
+            <svg class="page-header__logo-desktop" width="146.3px" height="40.375px">
+              <use xlink:href="#sprite-logo-pink-white-desktop"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="main-nav main-nav--opened main-nav--nojs">   <!--main-nav--opened, main-nav--closed-->
+          <button class="main-nav__toggle" type="button">
+            <!--<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+              <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+            </svg>-->
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link site-list__link--active">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение Пинк</h1>
+      <section class="competition">
+        <div class="competition__image">
+          <h2 class="competition__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        </div>
+        <p class="competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="competition__text-tablet">Пожалуйста, заполните форму ниже:</span></p>
+        <div class="competition__forms forms">
+          <form class="forms__competition" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="forms__wrapper">
+
+              <label class="forms__formline">
+                <span class="forms__label">Фамилия:</span>
+                <input type="text" name="surname" class="forms__input" placeholder="Укажите фамилию *">
+              </label>
+
+              <label class="forms__formline">
+                <span class="forms__label">Имя:</span>
+                <input type="text" name="name" class="forms__input" placeholder="Введите ваше имя *">
+              </label>
+
+              <label class="forms__formline">
+                <span class="forms__label">Отчество:</span>
+                <input type="text" name="patronymic" class="forms__input" placeholder="Ну и отчество тоже">
+              </label>
+            </fieldset>
+
+            <fieldset class="forms__wrapper">
+              <legend class="forms__title">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="forms__list">
+
+                <li class="forms__option">
+                  <label class="forms__checkline forms__checkline-box">
+                    <input type="checkbox" name="selfie" class="forms__checkline-input" value="" checked>
+                    <span class="forms__checkline-label">Сделал селфи с акулой</span>
+                  </label>
+                </li>
+
+                <li class="forms__option">
+                  <label class="forms__checkline forms__checkline-box">
+                    <input type="checkbox" name="beach" class="forms__checkline-input" value="" checked>
+                    <span class="forms__checkline-label">Обгорел на пляже</span>
+                  </label>
+                </li>
+
+                <li class="forms__option">
+                  <label class="forms__checkline forms__checkline-box">
+                    <input type="checkbox" name="chuck-norris" class="forms__checkline-input" value="">
+                    <span class="forms__checkline-label">Видел Чака Норриса</span>
+                  </label>
+                </li>
+
+                <li class="forms__option">
+                  <label class="forms__checkline forms__checkline-box">
+                    <input type="checkbox" name="souvenirs" class="forms__checkline-input" value="">
+                    <span class="forms__checkline-label">Накупил сувениров</span>
+                  </label>
+                </li>
+
+                <li class="forms__option">
+                  <label class="forms__checkline forms__checkline-box">
+                    <input type="checkbox" name="tower" class="forms__checkline-input" value="" checked>
+                    <span class="forms__checkline-label">Удержал башню</span>
+                  </label>
+                </li>
+
+                <li class="forms__option">
+                  <label class="forms__checkline forms__checkline-box">
+                    <input type="checkbox" name="hotel" class="forms__checkline-input" value="">
+                    <span class="forms__checkline-label">Разгромил отель</span>
+                  </label>
+                </li>
+
+              </ul>
+            </fieldset>
+
+            <fieldset class="forms__wrapper">
+              <legend class="forms__title forms__title--hidden">Контактная информация</legend>
+              <div class="forms__helper-container">
+                <label class="forms__formline forms__formline--contacts">
+                  <span class="forms__label forms__label--contacts">Номер&nbsp;телефона</span>
+                  <input type="tel" name="number" class="forms__input forms__input--contacts" placeholder="Номер, пожалуйста">
+                </label>
+
+                <label class="forms__formline forms__formline--contacts">
+                  <span class="forms__label forms__label--contacts">Адрес&nbsp;почты</span>
+                  <input type="email" name="mail" class="forms__input forms__input--contacts" placeholder="Введите почту *">
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="forms__wrapper">
+              <legend class="forms__title forms__title--radio">С каким приложением путешествовали?</legend>
+              <ul class="forms__list forms__list--radio">
+
+                <li class="forms__option-radio">
+                  <label class="forms__radio">
+                    <input type="radio" name="application" class="forms__radio-input" value="ios" checked>
+                    <span class="forms__radio-label">Pink для iOS</span>
+                  </label>
+                </li>
+
+                <li class="forms__option-radio">
+                  <label class="forms__radio">
+                    <input type="radio" name="application" class="forms__radio-input" value="android">
+                    <span class="forms__radio-label">Pink на Android</span>
+                  </label>
+                </li>
+
+                <li class="forms__option-radio">
+                  <label class="forms__radio">
+                    <input type="radio" name="application" class="forms__radio-input" value="windows">
+                    <span class="forms__radio-label">Windows Phone</span>
+                  </label>
+                </li>
+
+              </ul>
+            </fieldset>
+
+            <fieldset class="forms__wrapper">
+              <legend class="forms__title forms__wrapper-textarea">Опишите свои эмоции</legend>
+              <label class="forms__textarea-label" for="comment"><span class="visually-hidden">Опишите свои эмоции</span></label>
+              <textarea class="forms__textarea" name="comment" id="comment" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+
+            <div class="forms__elements">
+              <button class="forms__button button" type="submit">Отправить форму</button>
+              <div class="forms__small">
+                <small class="forms__legend">
+                  <span class="forms__legend-pink">*</span> — обязательные<span class="forms__legend-desktop">&nbsp;для заполнения</span>&nbsp;поля
+                </small>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <a class="page-footer__logo" href="#">
+          <svg class="page-footer__logo-desktop" width="146.3px" height="40.375px">
+            <use xlink:href="#sprite-logo-pink-blue-desktop"></use>
+          </svg>
+          <svg class="page-footer__logo-image" width="146.3px" height="40.375px">
+            <use xlink:href="#sprite-logo-pink-blue-mobile"></use>
+          </svg>
+        </a>
+
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Твиттер</span>
+                <svg class="social__image" width="17.5px" height="14.663px">
+                  <use xlink:href="#sprite-icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span>
+                <svg class="social__image" width="8.673px" height="18.944px">
+                  <use xlink:href="#sprite-icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Ютуб</span>
+                <svg class="social__image" width="14.64px" height="13.96px">
+                  <use xlink:href="#sprite-icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Логотип Академии</span>
+            <svg class="copyright__image" width="41px" height="41px">
+              <use xlink:href="#sprite-htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <section class="modal-error modal-error--hidden">
+      <div class="modal-error__wrapper">
+        <h3 class="modal-error__title">Что-то пошло не&nbsp;так!</h3>
+        <p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить</p>
+        <a class="modal-error__button button" href="#">Ок</a>
+      </div>
+    </section>
+
+    <section class="modal-luck modal-luck--hidden">
+      <div class="modal-luck__first">
+        <h3 class="modal-luck__title">Ваша заявка отправлена</h3>
+        <p class="modal-luck__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.</p>
+      </div>
+      <div class="modal-luck__second">
+        <a class="modal-luck__button button" href="#">Закрыть окно</a>
+      </div>
+    </section>
+    <script src="js/menu.js"></script>
+    <script src="js/picturefill.js"></script>
+    <script src="js/svgxuse.js"></script>
+    <script src="js/svg4everybody.js"></script>
+    <script src="js/objectfit.js"></script>
+  </body>
+</html>
