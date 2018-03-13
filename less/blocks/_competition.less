@@ -1,0 +1,160 @@
+.competition {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.competition__image {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  background-position: center 0;
+  background-color: #000000;
+  min-height: 240px;
+  margin-top: -70px;
+  z-index: 0;
+  background-size: 700px auto;
+  /*padding-top: 30px;
+  padding-bottom: 53px;*/
+  /*min-height: 100px;*/
+  /*outline: 5px solid yellow;*/
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-position: center 0;
+    background-size: 700px auto;
+  }
+}
+
+@media (min-width: 660px) {
+  .competition__image {
+    width: 660px;
+    padding: 0;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center 0;
+    min-height: 439px;
+    margin-top: -110px;
+    z-index: 0;
+    background-size: 1200px auto;
+    /* Временно для сетки */
+    /*min-height: 329px;*/
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-position: center 0;
+      background-size: 1200px auto;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .competition__image {
+    width: 100%;
+    margin-top: 0;
+    min-height: 394px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center 0;
+    background-size: 2560px auto;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-position: center 0;
+      background-size: 2560px auto;
+    }
+  }
+}
+
+.competition__title {
+  margin: 0;
+  width: 230px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 100px;
+  padding-bottom: 53px;
+
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 100;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: 660px) {
+  .competition__title {
+    width: 476px;
+    padding-left: 92px;
+    padding-right: 92px;
+    padding-top: 180px;
+    padding-bottom: 79px;
+
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 100;
+  }
+}
+
+@media (min-width: 960px) {
+  .competition__title {
+    width: 760px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 175px;
+    padding-bottom: 99px;
+
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 100;
+    margin: 0 auto;
+  }
+}
+
+.competition__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @bg-darkblue;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 45px;
+  padding-bottom: 2px;
+}
+
+@media (min-width: 660px) {
+  .competition__text {
+    font-size: 18px;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-top: 92px;
+    padding-bottom: 34px;
+  }
+}
+
+@media (min-width: 960px) {
+  .competition__text {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 92px;
+    padding-bottom: 70px;
+    width: 760px;
+    margin: 0 auto;
+  }
+}
+
+.competition__text-tablet {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .competition__text-tablet {
+    display: inline;
+  }
+}
+
+@media (min-width: 960px) {
+  .competition__text-tablet {
+    display: inline;
+    margin-left: 5px;
+  }
+}

@@ -1,46 +1,95 @@
-@media (min-width: @mobile-width) {
 .body-style {
-    min-width: 320px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: "Exo Thin", "Arial", sans-serif;
-    position: relative;
-    background-image: url('../img/pattern-shadow.png');
-    background-size: auto;
-    background-repeat: repeat;
+  width: 320px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Open Sans", "Arial", sans-serif;
+  background-color: #e5e5e5;
+  position: relative;
+}
 
-    position: relative;
-    background-color: black;
-    background-size: 100%;
-  }
-
-  .page-main {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    //height: 100vh;
+@media (min-width: 660px) {
+  .body-style {
+    width: 660px;
+    /*padding: 0 20px;*/
   }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: 960px) {
   .body-style {
     margin: 0 auto;
-    min-width: 1280px;
+    min-width: 960px;
+    /*max-width: 1200px;*/
     width: 100%;
     position: relative;
-    background-color: black;
-    background-size: 100%;
-    //height: 100vh;
+    /*padding: 0 120px;*/
   }
+}
 
-  .page-main {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+/*@media (min-width: 1200px) {
+  .body-style {
+    width: 1200px;
+  }
+}*/
+
+.index-page {
+  /*background: #283645 url("../img/pink-index-mobile.jpg") no-repeat 50% 0;
+  background-size: 320px auto;
+  min-height: 750px;
+  opacity: 0.1;*/
+}
+
+@media (min-width: 660px) {
+  .index-page {
+    /*background: #283645 url("../img/pink-index-tablet.jpg") no-repeat 50% 0;
+    background-size: 660px auto;*/
+  }
+}
+
+@media (min-width: 960px) {
+  .index-page {
+    /*background: #283645 url("../img/pink-index-desktop.jpg") no-repeat 50% 0;
+    background-size: 1200px auto;*/
+  }
+}
+
+.form-page {
+  /*background: #283645 url("../img/pink-form-mobile.jpg") no-repeat 50% 0;
+  background-size: 320px auto;
+  min-height: 750px;*/
+}
+
+@media (min-width: 660px) {
+  .form-page {
+    /*background: #283645 url("../img/pink-form-tablet.jpg") no-repeat 50% 0;
+    background-size: 660px auto;*/
+  }
+}
+
+@media (min-width: 960px) {
+  .form-page {
+    /*background: #283645 url("../img/pink-form-desktop.jpg") no-repeat 50% 0;
+    background-size: 1200px auto;*/
+  }
+}
+
+.photo-page {
+  /*background: #283645 url("../img/pink-photo-mobile.jpg") no-repeat 50% 0;
+  background-size: 320px auto;
+  min-height: 750px;*/
+}
+
+@media (min-width: 660px) {
+  .photo-page {
+    /*background: #283645 url("../img/pink-photo-tablet.jpg") no-repeat 50% 0;
+    background-size: 660px auto;*/
+  }
+}
+
+@media (min-width: 960px) {
+  .photo-page {
+    /*background: #283645 url("../img/pink-photo-desktop.jpg") no-repeat 50% 0;
+    background-size: 1200px auto;*/
   }
 }
